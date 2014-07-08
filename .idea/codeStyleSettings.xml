@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectCodeStyleSettingsManager">
+    <option name="PER_PROJECT_SETTINGS">
+      <value>
+        <option name="OTHER_INDENT_OPTIONS">
+          <value>
+            <option name="INDENT_SIZE" value="4" />
+            <option name="CONTINUATION_INDENT_SIZE" value="8" />
+            <option name="TAB_SIZE" value="4" />
+            <option name="USE_TAB_CHARACTER" value="true" />
+            <option name="SMART_TABS" value="false" />
+            <option name="LABEL_INDENT_SIZE" value="0" />
+            <option name="LABEL_INDENT_ABSOLUTE" value="false" />
+            <option name="USE_RELATIVE_INDENTS" value="false" />
+          </value>
+        </option>
+        <option name="LINE_SEPARATOR" value="&#10;" />
+        <option name="HTML_ATTRIBUTE_WRAP" value="0" />
+        <option name="HTML_TEXT_WRAP" value="0" />
+        <option name="HTML_ALIGN_TEXT" value="true" />
+        <option name="HTML_ELEMENTS_TO_INSERT_NEW_LINE_BEFORE" value="body,div,p,form,h1,h2,h3,input" />
+        <JSCodeStyleSettings>
+          <option name="SPACE_BEFORE_FUNCTION_LEFT_PARENTH" value="false" />
+        </JSCodeStyleSettings>
+        <PHPCodeStyleSettings>
+          <option name="PHPDOC_BLANK_LINES_AROUND_PARAMETERS" value="true" />
+          <option name="LOWER_CASE_BOOLEAN_CONST" value="true" />
+          <option name="LOWER_CASE_NULL_CONST" value="true" />
+        </PHPCodeStyleSettings>
+        <SqlCodeStyleSettings>
+          <option name="WRAP_INSIDE_JOIN_EXPRESSION" value="0" />
+          <option name="TYPE_CASE" value="0" />
+        </SqlCodeStyleSettings>
+        <XML>
+          <option name="XML_LEGACY_SETTINGS_IMPORTED" value="true" />
+        </XML>
+        <codeStyleSettings language="CSS">
+          <indentOptions>
+            <option name="USE_TAB_CHARACTER" value="true" />
+          </indentOptions>
+        </codeStyleSettings>
+        <codeStyleSettings language="HTML">
+          <indentOptions>
+            <option name="USE_TAB_CHARACTER" value="true" />
+          </indentOptions>
+        </codeStyleSettings>
+        <codeStyleSettings language="JavaScript">
+          <option name="SPACE_BEFORE_IF_PARENTHESES" value="false" />
+          <option name="SPACE_BEFORE_WHILE_PARENTHESES" value="false" />
+          <option name="SPACE_BEFORE_FOR_PARENTHESES" value="false" />
+          <option name="SPACE_BEFORE_CATCH_PARENTHESES" value="false" />
+          <option name="SPACE_BEFORE_SWITCH_PARENTHESES" value="false" />
+          <option name="SPACE_BEFORE_METHOD_LBRACE" value="false" />
+          <option name="SPACE_BEFORE_IF_LBRACE" value="false" />
+          <option name="SPACE_BEFORE_WHILE_LBRACE" value="false" />
+          <option name="SPACE_BEFORE_FOR_LBRACE" value="false" />
+          <option name="SPACE_BEFORE_DO_LBRACE" value="false" />
+          <option name="SPACE_BEFORE_SWITCH_LBRACE" value="false" />
+          <option name="SPACE_BEFORE_TRY_LBRACE" value="false" />
+          <option name="SPACE_BEFORE_CATCH_LBRACE" value="false" />
+          <option name="SPACE_BEFORE_FINALLY_LBRACE" value="false" />
+          <indentOptions>
+            <option name="USE_TAB_CHARACTER" value="true" />
+          </indentOptions>
+        </codeStyleSettings>
+        <codeStyleSettings language="PHP">
+          <option name="KEEP_LINE_BREAKS" value="false" />
+          <option name="KEEP_CONTROL_STATEMENT_IN_ONE_LINE" value="false" />
+          <option name="BRACE_STYLE" value="2" />
+          <option name="ELSE_ON_NEW_LINE" value="true" />
+          <option name="WHILE_ON_NEW_LINE" value="true" />
+          <option name="CATCH_ON_NEW_LINE" value="true" />
+          <option name="ALIGN_MULTILINE_PARAMETERS_IN_CALLS" value="true" />
+          <option name="ALIGN_MULTILINE_ARRAY_INITIALIZER_EXPRESSION" value="true" />
+          <option name="CALL_PARAMETERS_WRAP" value="1" />
+          <option name="CALL_PARAMETERS_LPAREN_ON_NEXT_LINE" value="true" />
+          <option name="CALL_PARAMETERS_RPAREN_ON_NEXT_LINE" value="true" />
+          <option name="METHOD_PARAMETERS_RPAREN_ON_NEXT_LINE" value="true" />
+          <option name="KEEP_SIMPLE_METHODS_IN_ONE_LINE" value="true" />
+          <option name="FOR_STATEMENT_LPAREN_ON_NEXT_LINE" value="true" />
+          <option name="FOR_STATEMENT_RPAREN_ON_NEXT_LINE" value="true" />
+          <option name="ARRAY_INITIALIZER_WRAP" value="2" />
+          <option name="ARRAY_INITIALIZER_LBRACE_ON_NEXT_LINE" value="true" />
+          <option name="ARRAY_INITIALIZER_RBRACE_ON_NEXT_LINE" value="true" />
+          <option name="DOWHILE_BRACE_FORCE" value="3" />
+          <option name="WHILE_BRACE_FORCE" value="3" />
+          <option name="FOR_BRACE_FORCE" value="1" />
+        </codeStyleSettings>
+        <codeStyleSettings language="SQL">
+          <indentOptions>
+            <option name="USE_TAB_CHARACTER" value="true" />
+          </indentOptions>
+        </codeStyleSettings>
+        <codeStyleSettings language="XML">
+          <indentOptions>
+            <option name="USE_TAB_CHARACTER" value="true" />
+          </indentOptions>
+        </codeStyleSettings>
+      </value>
+    </option>
+    <option name="PREFERRED_PROJECT_CODE_STYLE" value="Default (1)" />
+  </component>
+</project>
+
