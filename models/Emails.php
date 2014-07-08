@@ -2,7 +2,10 @@
 
 namespace app\models;
 
+use app\components\data\EmailAddress;
+use yii\base\InvalidParamException;
 use Yii;
+use yii\helpers\ArrayHelper;
 
 /**
  * This is the model class for table "emails".
@@ -44,5 +47,18 @@ class Emails extends \yii\db\ActiveRecord
             'email' => 'Email',
             'status' => 'Status',
         ];
+    }
+
+    public static function addForGmail(EmailAddress $email)
+    {
+        if ('gmail.com' !== $email->domain) {
+            throw new InvalidParamException('Expected gmail email');
+        }
+        $mails = EmailAddress::populateGmailEmails($email);
+        $mails[] = $email;
+        $insertMails = self::getDb()->createCommand();
+        $addresses = ArrayHelper::getColumn($mails, function($obj){return [$obj->address];});
+        $insertMails->batchInsert(self::tableName(), ['email'], $addresses);
+        $insertMails->execute();
     }
 }
