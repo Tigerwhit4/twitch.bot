@@ -51,4 +51,6 @@ if (YII_ENV_DEV) {
     $config['modules']['gii'] = 'yii\gii\Module';
 }
 
+Yii::$classMap['Curl'] = '@app/vendor/php-curl-class/php-curl-class/src/Curl.class.php';
+
 return $config;
