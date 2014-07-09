@@ -64,4 +64,9 @@ class Emails extends \yii\db\ActiveRecord
         $insertMails->batchInsert(self::tableName(), ['email'], $addresses);
         $insertMails->execute();
     }
+
+    public static function findActive()
+    {
+        return static::find()->where('status=:status',['status'=>static::STATUS_ACTIVE]);
+    }
 }

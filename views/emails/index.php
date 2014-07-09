@@ -2,8 +2,9 @@
 /**
  * @var yii\web\View $this
  * @var app\models\Emails $emailModel
+ * @var \yii\data\ActiveDataProvider $activeEmails
  */
-use yii\widgets\ActiveForm;
+use yii\bootstrap\ActiveForm;
 
 ?>
 <h1>Emails</h1>
@@ -14,6 +15,7 @@ use yii\widgets\ActiveForm;
         [
             'action' => ['create'],
             'id' => 'form-add-emails',
+            'layout' => 'inline',
             'beforeSubmit' => "function(form) {
                 if($(form).find('.has-error').length) {
                         return false;
@@ -37,7 +39,12 @@ use yii\widgets\ActiveForm;
     );
     ?>
     <?= $form->field($emailModel, 'email'); ?>
-    <?= \yii\helpers\Html::submitButton(); ?>
+    <?= \yii\helpers\Html::submitButton('Create', ['class'=>'btn btn-success']); ?>
     <?php $form->end(); ?>
 
+    <?= \yii\grid\GridView::widget(
+        [
+            'dataProvider' => $activeEmails,
+        ]
+    ) ?>
 </p>

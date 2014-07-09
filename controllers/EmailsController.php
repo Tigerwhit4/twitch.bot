@@ -11,16 +11,24 @@ namespace app\controllers;
 
 use app\components\data\EmailAddress;
 use app\models\Emails;
+use yii\data\ActiveDataProvider;
 use yii\web\Response;
 
 class EmailsController extends \yii\web\Controller
 {
     public function actionIndex()
     {
+        $activeEmails = new ActiveDataProvider([
+            'query' => Emails::findActive(),
+            'pagination' => [
+                'pageSize' => 20,
+            ],
+        ]);
         return $this->render(
             'index',
             [
                 'emailModel' => new Emails(),
+                'activeEmails' => $activeEmails,
             ]
         );
     }
@@ -31,6 +39,6 @@ class EmailsController extends \yii\web\Controller
         $emails = new Emails();
         $emails->load(\Yii::$app->request->post());
 
-        Emails::addForGmail(new EmailAddress(['address'=>$emails->email]));
+        Emails::addForGmail(new EmailAddress(['address' => $emails->email]));
     }
 } 
